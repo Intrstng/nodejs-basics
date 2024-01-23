@@ -1,4 +1,4 @@
-import path from 'path'
+import path from 'path';
 import { writeFile } from 'fs/promises';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';

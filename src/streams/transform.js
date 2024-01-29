@@ -10,7 +10,7 @@ const transform = async () => {
         ) {
             const reversedChunk = chunk.toString().trim().split('').reverse().join('');
             const transformedChunk = reversedChunk + '\n';
-            // const transformedChunk = reversedChunk + os.eol;
+            // const transformedChunk = reversedChunk + os.eol; или это
             this.push(transformedChunk);
             callback();
             //callback(null, transformedChunk); или это

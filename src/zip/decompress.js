@@ -1,4 +1,4 @@
-import path from 'path'
+import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { createReadStream, createWriteStream } from 'node:fs';
@@ -12,7 +12,6 @@ const pathToDestinationFile = path.join(__dirname, 'files', 'fileToCompress.txt'
 const sourceStream = createReadStream(pathToSourceFile);
 const gzipStream = createGunzip();
 const destinationStream = createWriteStream(pathToDestinationFile);
-
 
 const decompress = async () => {
     try {

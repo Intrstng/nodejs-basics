@@ -1,23 +1,10 @@
-import path, { dirname, basename } from 'path'
+import path, { dirname, basename } from 'path';
 import { fileURLToPath } from 'url';
 import { createWriteStream } from 'node:fs';
 import process from 'node:process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const pathToDestinationFile = path.join(__dirname, 'files', 'fileToWrite.txt');
-
-
-// const write = async () => {
-//     const readStream = createReadStream(pathToSourceFile);
-//     const writeStream = createWriteStream(pathToDestinationFile);
-//
-//     try {
-//         await readStream.pipe(writeStream);
-//         console.log('Write operation successful!');
-//     } catch {
-//         throw new Error('Write operation failed');
-//     }
-// };
 
 const write = async () => {
     const writeStream = createWriteStream(pathToDestinationFile);

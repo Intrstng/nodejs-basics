@@ -13,7 +13,6 @@ const create = async () => {
     } catch {
         throw new Error ('FS operation failed');
     }
-
 };
 
 await create();

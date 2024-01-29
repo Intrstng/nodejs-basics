@@ -1,8 +1,7 @@
-import path from 'path'
+import path from 'path';
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const pathToFilesFolder = path.join(__dirname, 'files', 'fileToRead.txt');

@@ -1,4 +1,4 @@
-import path from 'path'
+import path from 'path';
 import { release, version } from 'os';
 import { createServer as createServerHttp } from 'http';
 import './files/c.js';
@@ -49,6 +49,7 @@ export {
 };
 
 
+// // Common js module
 // const path = require('path');
 // const { release, version } = require('os');
 // const { createServer: createServerHttp } = require('http');

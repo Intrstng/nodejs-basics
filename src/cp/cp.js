@@ -1,5 +1,5 @@
+import path, {dirname} from 'path';
 import {spawn} from 'child_process';
-import path, {dirname} from 'path'
 import {fileURLToPath} from 'url';
 import process from 'node:process';
 

@@ -1,10 +1,9 @@
-import path from 'path'
+import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { createReadStream, createWriteStream } from 'node:fs';
 import { createGzip } from 'node:zlib';
 import { pipeline } from 'stream/promises';
-
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const pathToSourceFile = path.join(__dirname, 'files', 'fileToCompress.txt');

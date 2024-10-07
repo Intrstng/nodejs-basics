@@ -9,10 +9,7 @@ const pathToDestinationFile = path.join(__dirname, 'files', 'fileToWrite.txt');
 const write = async () => {
     const writeStream = createWriteStream(pathToDestinationFile);
     try {
-        await process.stdin.pipe(writeStream);
-        // process.stdin.on('end', () => {
-        //     console.log('Writing to file complete');
-        // });
+        process.stdin.pipe(writeStream);
     } catch {
         throw new Error ('Write operation failed');
     }

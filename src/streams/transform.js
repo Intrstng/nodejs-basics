@@ -1,6 +1,5 @@
 import {Transform} from 'stream';
 import process from 'node:process';
-import os from 'os';
 
 const transform = async () => {
     const reverseTransform = new Transform({
@@ -10,10 +9,8 @@ const transform = async () => {
         ) {
             const reversedChunk = chunk.toString().trim().split('').reverse().join('');
             const transformedChunk = reversedChunk + '\n';
-            // const transformedChunk = reversedChunk + os.eol; или это
             this.push(transformedChunk);
             callback();
-            //callback(null, transformedChunk); или это
         },
     });
 

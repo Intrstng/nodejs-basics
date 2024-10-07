@@ -21,7 +21,7 @@ const read = async () => {
 await read();
 
 
-
+// // Second solution using pipe method
 
 // const read = async () => {
 //     const readStream = createReadStream(pathToSourceFile);

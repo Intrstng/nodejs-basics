@@ -11,7 +11,7 @@ const remove = async () => {
         await rm(pathToFileDelete, {
             force: false,
             recursive: true
-        }); // можно без объекта с опциями
+        });
     } catch {
         throw new Error('FS operation failed');
     }
